@@ -7,7 +7,7 @@ class Assignment1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: const Color.fromARGB(255, 1, 148, 128),
         title: const Text(
           'First Application',
           style: TextStyle(),
@@ -19,13 +19,16 @@ class Assignment1 extends StatelessWidget {
           height: 50,
           decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(16),
-              boxShadow: const [BoxShadow(color: Colors.grey, blurRadius: 4)]),
+              borderRadius: BorderRadius.circular(32),
+              boxShadow: const [
+                BoxShadow(
+                    color: Color.fromARGB(131, 0, 150, 150), blurRadius: 8)
+              ]),
           child: const Center(
             child: Text(
               'Ahmed Mabrouk',
               style: TextStyle(
-                color: Colors.black,
+                color: Color.fromARGB(255, 0, 116, 100),
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
