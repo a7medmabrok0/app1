@@ -7,9 +7,9 @@ class BarthDayCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 22, 22, 22),
+      backgroundColor: const Color.fromARGB(255, 22, 22, 22),
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 32, 32, 32),
+        backgroundColor: const Color.fromARGB(255, 32, 32, 32),
         title: const Text('Birthday Card'),
       ),
       body: Column(
@@ -38,7 +38,7 @@ class BarthDayCard extends StatelessWidget {
           Text(
             'Happy Birthday',
             style: GoogleFonts.pacifico(
-                color: Color.fromARGB(255, 243, 243, 243),
+                color: const Color.fromARGB(255, 243, 243, 243),
                 fontSize: 40,
                 height: 1.2),
           ),
