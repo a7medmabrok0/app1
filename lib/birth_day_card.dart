@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class BarthDayCard extends StatelessWidget {
   const BarthDayCard({super.key});
@@ -6,8 +7,9 @@ class BarthDayCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 22, 22, 22),
       appBar: AppBar(
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color.fromARGB(255, 32, 32, 32),
         title: const Text('Birthday Card'),
       ),
       body: Column(
@@ -16,25 +18,29 @@ class BarthDayCard extends StatelessWidget {
           Center(
             child: Container(
               decoration: const BoxDecoration(
-                  boxShadow: [BoxShadow(color: Colors.black, blurRadius: 12)],
-                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color.fromARGB(226, 255, 174, 0),
+                        blurRadius: 100)
+                  ],
+                  color: Color.fromARGB(255, 240, 156, 0),
                   shape: BoxShape.circle),
               child: const Padding(
-                padding: EdgeInsets.all(2.0),
-                child: CircleAvatar(
-                  backgroundImage:
-                      AssetImage('assets/images/happy-birthday.jpg'),
-                  radius: 150,
-                ),
-              ),
+                  padding: EdgeInsets.all(2.0),
+                  child: Image(
+                    image: AssetImage('assets/images/Happy_birthday.png'),
+                  )),
             ),
           ),
           const SizedBox(
             height: 20,
           ),
-          const Text(
+          Text(
             'Happy Birthday',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: GoogleFonts.pacifico(
+                color: Color.fromARGB(255, 243, 243, 243),
+                fontSize: 40,
+                height: 1.2),
           ),
         ],
       ),
